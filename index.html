@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Store</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <style>
+         @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Work+Sans&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+        font-family: "Baloo 2";
+      }
+      .heading{
+        display: flex;
+        justify-content: space-around;
+        background-color: whitesmoke;
+        padding: 13px;
+      }
+      ul{
+        display: flex;
+        gap: 23px;
+      }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            /* padding: 13px;
+            background-color: red; */
+
+        }
+      li:nth-child(5) a{
+            background-color: #006699;
+            padding: 4px 13px;
+            color: #fff;
+
+        }
+        li:nth-child(6) a .fa{
+            font-size: 23px;
+            color: #ff0066;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            padding: 53px;
+            flex-wrap: wrap;
+        }
+        .heroLeft{
+            flex: 0 0 50%;
+        }
+        .heroRight{
+            flex: 0 0 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heroRight{
+            position: relative;
+            /* border: 2px solid black; */
+        }
+        .img{
+            position: relative;
+        }
+        .img::after{
+            content: "";
+            width: 300px;
+            height: 330px;
+            position: absolute;
+            top: -33px;
+            right: -54px ;
+            border-radius: 4px;
+            background-color: #006699;
+            z-index: -999;
+            
+            /* border: 2px solid black; */
+        }
+        img{
+            width: 400px;
+            /* object-fit: cover; */
+        }
+
+
+        /* this is for tablet */
+            @media(max-width:820px){
+                .hero{
+                    padding:50px ;
+                    /* flex-direction: column; */
+                    /* justify-content: space-around; */
+                    gap: 34px;
+                    /* flex-wrap: nowrap; */
+                }
+               
+                .heroLeft{
+                    flex: 0 0 30%;
+                }
+                .heroRight{
+                    flex: 0 0 40%;
+                }
+                
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- header section start -->
+<header class="heading">
+    <a href="">Apna Store</a>
+    <nav><ul>
+
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+    </ul></nav>
+</header>
+
+    <!-- header section end -->
+
+    <div class="hero">
+        <div class="heroLeft">
+            <h1>Apna Store</h1>
+            <p style="margin-bottom: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse iste dolorum ut, a harum reprehenderit blanditiis beatae quae quis modi ducimus quo doloremque id voluptates? Voluptatem deleniti quidem, dolorum ratione eveniet ut dolores? Ea?</p>
+        <a href="contact.html" style="background-color: #006699; padding: 6px 13px;margin-top: 55px; color: #fff;">Shop Now</a>
+        </div>
+        <div class="heroRight">
+            <div class="img">
+                <img src="shopping.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

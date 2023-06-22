@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Store</title>
+    <style>
+         @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Work+Sans&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+        font-family: "Baloo 2";
+      }
+        #contact{
+            background-color: whitesmoke;
+            padding: 34px;
+
+        }
+        .contactContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            padding: 24px;
+            background-color: #fff;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        }
+        label{
+            font-size: 22px;
+            margin: 0 5px;
+        }
+        .form-group{
+            /* border: 2px solid black; */
+            padding: 4px;
+        }
+        input{
+            padding:  0 13px;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            border-bottom: .5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <div class="contactContainer">
+            <div class="form">
+                <form action="https://formsubmit.co/mrkec1994@gmail.com"  method="post">
+                   <h1>Add Your Query</h1>
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="">Mobile</label>
+                    <input type="text" name="mobile">
+                </div>
+                <div class="form-group">
+                    <label for="">Subject</label>
+                    <input type="text" name="subject">
+                </div>
+                <div class="form-group" style="">
+                    <!-- <label for="">Message</label> -->
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Message" name="message"></textarea>
+                </div>
+                <input type="submit" value="Submit" style="background-color: blueviolet;padding: 7px 23px; cursor: pointer;">
+               </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
